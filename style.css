@@ -1,0 +1,509 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('IDroid.otf') format(Opentype);
+}
+
+@font-face {
+    font-family: 'Tech';
+    src: url('Bebas-Regular.otf') format(Opentype);
+}
+
+
+
+ body{
+    margin: 0px;
+    padding: 0px;
+    color: #242424;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    height: 2000px;
+
+}
+
+header{
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline;
+    align-items: center;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 19px;
+    font-family: Arial;
+    text-transform: uppercase;
+    position: fixed;
+    overflow: hidden;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: solid white 1px;
+    margin: auto;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px 15px;
+    margin: 0 auto;
+    
+}
+
+nav a:hover{
+    transition: 0.5s;
+    background-color: rgba(78, 224, 224, 0.753);
+    color: black;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: black;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: white;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+
+
+section.module p{
+    margin-bottom: 40px;
+    text-align: justify;
+    text-indent: 30px;
+
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background-color: #e4e4e4;
+    
+    
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    margin: auto;
+   
+
+}
+
+section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+
+section.module.parallax-1{
+    background-image: url(imagem/4884273.jpg);
+}
+
+section.module.parallax-2{
+    background-image:url(imagem/5101597.jpg) ;
+}
+
+section.module.parallax-3{
+    background-image: url(imagem/4568884.jpg);
+}
+
+section.module.parallax-4{
+    background-image: url(imagem/imagem-4.avif);
+}
+
+section.module.parallax-5{
+    background-image:url(imagem/imagem-5.avif);
+}
+
+.container-4{
+    display: flex;
+    
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    
+
+}
+
+.text_android{
+    padding: 30px 30px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.card_animation{  
+    position: relative;
+    width: 400px;
+    height: 315px;
+    align-items: center;
+    text-align: center;
+   margin: auto;
+
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-style: solid 3px;
+    text-align: center;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    background-color: whitesmoke;
+    font-size: 18px;
+    
+}
+   
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #fafafa;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+
+
+}
+
+
+.explorete{
+    text-align: center;
+}
+
+section.module.parallax h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    z-index: 50;
+    text-transform: uppercase;
+    font-family: android;
+}
+
+.container-rodape{
+    background-color: #000;
+    text-align: right;
+    margin: 0 auto;
+    padding: 20px auto;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+
+   
+    
+    
+}
+
+.rodape > h4{
+    color: gray;
+    font-family: serif;
+    padding: 15px 25px;
+    align-items: center;
+    float: right;
+    
+}
+
+.rodape > a >img{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 30px 15px;
+    float: left;
+    
+    
+}
+
+section.module.content-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #e4e4e4;
+}
+
+.container-4 > p {
+    height: 200px;
+    width: 180px;
+}
+
+.container-contato{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 25px 45px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+
+
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+form label{
+    font-size: 20px;
+    
+}
+
+form input{
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 0;
+    transition: all 0.5s;
+   
+   
+}
+
+form input:focus{
+    border-radius: 16px;
+    
+}
+
+form textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0;
+   
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    backdrop-filter: blur(35px);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    transition: 1s;
+
+}
+
+form button:hover{
+    background-color: #242424;
+    color: #fff;
+    border-radius: 16px;
+}
+
+@media  (max-width: 400px) {
+    .container-contato{
+        width: 250px;
+    }
+    
+}
+
+@media (max-width:440px) {
+    .container-4{
+        width: 250px;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .module.parallax.parallax-1 > h1{
+      font-size: 30px;
+       
+    }
+}
+
+@media (max-width:400px) {
+    .module.parallax.parallax-2 > h1{
+      font-size: 30px;
+       
+    }
+}
+
+@media (max-width:400px) {
+    .module.parallax.parallax-3 > h1{
+      font-size: 35px;
+       
+    }
+}
+
+@media (max-width:400px) {
+    .module.parallax.parallax-4 > h1{
+      font-size: 35px;
+       
+    }
+}
+
+@media (max-width:400px) {
+    .module.parallax.parallax-5 > h1{
+      font-size: 35px;
+       
+    }
+}
+
+
+/*Estilos para telas médias*/
+
+
+@media  (max-width: 794px) {
+    .container-contato{
+        width: 250px;
+    }
+    
+}
+
+@media (max-width: 794px) {
+    .container-4{
+        width: 250px;
+    }
+    
+}
+
+@media (max-width:794px) {
+    .module.parallax.parallax-1 > h1{
+      font-size: 35px;
+       
+    }
+}
+
+@media (max-width:794px) {
+    .module.parallax.parallax-2 > h1{
+      font-size: 35px;
+       
+    }
+}
+
+@media (max-width:794px) {
+    .module.parallax.parallax-3 > h1{
+      font-size: 35px;
+       
+    }
+}
+
+@media (max-width:794px) {
+    .module.parallax.parallax-4 > h1{
+      font-size: 35px;
+       
+    }
+}
+
+@media (max-width:794px) {
+    .module.parallax.parallax-5 > h1{
+      font-size: 35px;
+       
+    }
+}
+/* Estilos para telas pequenas */
+@media screen and (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      width: 250px;  
+      max-width: 100%;
+      padding: 10px;
+      
+    }
+    
+    /* Esconder elementos que ocupam muito espaço */
+    .sidebar {
+      display: none;
+    }
+    
+    /* Ajustar a aparência dos elementos restantes */
+    .main-content {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Estilos para telas médias */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      max-width: 750px;
+      padding: 15px;
+    }
+  }
+  
+  /* Estilos para telas grandes */
+  @media screen and (min-width: 992px) {
+    .container {
+      max-width: 960px;
+      padding: 20px;
+    }
+  }
+
+
