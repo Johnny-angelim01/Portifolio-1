@@ -426,11 +426,17 @@ form button:hover{
     
 }
 
+@media (max-width:400px){
+    .thefront{
+        font-size: 18px;
+    }
+}
+
 
 /*Estilos para telas médias*/
 
 
-@media  (max-width: 794px) {
+@media (max-width: 794px) {
     .container-contato{
         width: 250px;
     }
