@@ -370,6 +370,7 @@ form button:hover{
 @media (max-width:440px) {
     .container-4{
         width: 250px;
+        font-size: 16px;
     }
     
 }
@@ -407,6 +408,22 @@ form button:hover{
       font-size: 35px;
        
     }
+}
+
+@media (max-width:400px) {
+    .theback > iframe{
+       width: 250px;
+        height: 320px;
+        
+    }
+    
+}
+
+@media (max-width:400px) {
+    .menu{
+        width: 100%
+    }
+    
 }
 
 
@@ -460,6 +477,15 @@ form button:hover{
       font-size: 35px;
        
     }
+}
+
+@media (max-width:794px) {
+    .theback > iframe{
+       width: 250px;
+        height: 320px;
+        
+    }
+    
 }
 /* Estilos para telas pequenas */
 @media screen and (max-width: 767px) {
