@@ -428,7 +428,13 @@ form button:hover{
 
 @media (max-width:400px){
     .thefront{
-        font-size: 18px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:400px){
+    .card{
+        font-size: 10px;
     }
 }
 
